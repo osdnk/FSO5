@@ -119,7 +119,7 @@ describe('Blogs app', () => {
               .contains(/Likes: \d+/)
               .then((likes) => {
                 const value = Number(likes.text().slice(7))
-                expect(value).to.be.lessThan(lastVal)
+                expect(value).to.be.lessThan(lastVal+1) // less or equal
                 lastVal = value
               })
           })
