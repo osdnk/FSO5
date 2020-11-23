@@ -68,7 +68,7 @@ describe('Blogs app', () => {
     })
 
 
-    it('displays blogs sorted by the number of likes', () => {
+    it('displays blogs sorted by likes from the most popular', () => {
       cy.contains('add blog').click()
       cy.get('#title').type('New blog')
       cy.get('#url').type('google.pl')
